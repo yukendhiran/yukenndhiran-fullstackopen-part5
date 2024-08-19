@@ -36,7 +36,7 @@ const Blog = ({ blog, setBlogs }) => {
   };
 
   return (
-    <div className="blog">
+    <div className="blog" data-testid="blog card">
       <h2>{blog.title}</h2>
       <p>{blog.author}</p>
       <button onClick={handleVisibility}>{visible ? "hide" : "view"}</button>
